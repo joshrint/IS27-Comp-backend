@@ -2,6 +2,11 @@ var express = require("express");
 var router = express.Router();
 let guidesList = [
     {
+        id: 0,
+        firstName: 'N/A',
+        lastName: 'N/A'
+    },
+    {
         id: 1,
         firstName: 'Bob',
         lastName: 'Drake'
