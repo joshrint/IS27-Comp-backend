@@ -24,31 +24,31 @@ let boats = [
         id: 3,
         guideID: 0,
         boatName: 'SS Minnow',
-        swimlaneID: 0
+        swimlaneID: 1
     },
     {
         id: 4,
         guideID: 0,
         boatName: 'Flying Dutchman',
-        swimlaneID: 0
+        swimlaneID: 3
     },
     {
         id: 5,
         guideID: 0,
         boatName: 'Going Merry',
-        swimlaneID: 0
+        swimlaneID: 2
     },
     {
         id: 6,
         guideID: 0,
         boatName: 'Black Pearl',
-        swimlaneID: 0
+        swimlaneID: 1
     },
     {
         id: 7,
         guideID: 0,
         boatName: 'Nautilus',
-        swimlaneID: 0
+        swimlaneID: 1
     },
         
 ]
