@@ -57,4 +57,9 @@ router.get("/", function(req, res, next) {
     res.send(boats);
 });
 
+router.get("/:id", function(req, res) {
+    let boat = boats.filter(id = req.params.id);
+    res.send(boat);
+})
+
 module.exports = router;
