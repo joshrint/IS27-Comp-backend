@@ -3,70 +3,57 @@ var router = express.Router();
 let guidesList = [
     {
         id: 0,
-        firstName: 'N/A',
-        lastName: 'N/A'
+        guideName: 'N/A'
     },
     {
         id: 1,
-        firstName: 'Bob',
-        lastName: 'Drake'
+        guideName: 'Bob Drake'
     },
     {
         id: 2,
-        firstName: 'Marie',
-        lastName: 'Bromfield'
+        guideName: 'Marie Bromfield'
     },
     {
         id: 3,
-        firstName: 'Clint',
-        lastName: 'Barton'
+        guideName: 'Clint Barton'
     },
     {
         id: 4,
-        firstName: 'Hal',
-        lastName: 'Jordan'
+        guideName: 'Hal Jordan'
     },
     {
         id: 5,
-        firstName: 'Oliver',
-        lastName: 'Queen'
+        guideName: 'Oliver Queen'
     },
     {
         id: 6,
-        firstName: 'Barbara',
-        lastName: 'Gordon'
+        guideName: 'Barbara Gordon'
     },
     {
         id: 7,
-        firstName: 'Billy',
-        lastName: 'Batson'
+        guideName: 'Billy Batson'
     },
     ,
     {
         id: 8,
-        firstName: 'Diana',
-        lastName: 'Prince'
+        guideName: 'Diana Prince'
     },
     {
         id: 9,
-        firstName: 'Connor',
-        lastName: 'Hawk'
+        guideName: 'Connor Hawk'
     },
     {
         id: 10,
-        firstName: 'Marc',
-        lastName: 'Spector'
+        guideName: 'Marc Spector'
     }
     ,
     {
         id: 11,
-        firstName: 'Reed',
-        lastName: 'Richards'
+        guideName: 'Reed Richards'
     },
     {
         id: 12,
-        firstName: 'Ben',
-        lastName: 'Grimm'
+        guideName: 'Ben Grimm'
     }
 
 ];
