@@ -57,8 +57,8 @@ router.get("/", function(req, res, next) {
     res.send(boats);
 });
 
-router.get("/:id", function(req, res) {
-    let boat = boats.filter(id = req.params.id);
+router.get("/:id", function(req, res, next) {
+    const boat = boats.filter(b => b.id === parseInt(req.params.id));
     res.send(boat);
 })
 
