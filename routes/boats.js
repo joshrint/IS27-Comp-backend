@@ -16,7 +16,7 @@ let boats = [
     },
     {
         id: 2,
-        guide: 0,
+        guideName: 'Barbara Gordon',
         boatName: 'Gone Fission',
         swimlaneID: 0
     },
