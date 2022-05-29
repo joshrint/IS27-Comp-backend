@@ -25,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use("/boatAPI", boatRouter);
+app.use("/boatAPI/:id", boatRouter);
 app.use('/guidesAPI', guideRouter);
 app.use('/swimlanesAPI', swimlanesRouter);
 
