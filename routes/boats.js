@@ -4,13 +4,13 @@ var router = express.Router();
 let boats = [
     {
         id: 0,
-        guide: 0,
+        guideName: 'Bob Drake',
         boatName: 'Boaty McBoatface',
         swimlaneID: 0
     },
     {
         id: 1,
-        guide: 0,
+        guideName: 'Marie Bromfield',
         boatName: 'Orca II',
         swimlaneID: 0
     },
@@ -22,31 +22,31 @@ let boats = [
     },
     {
         id: 3,
-        guide: 0,
+        guideName: 'Marc Spector',
         boatName: 'SS Minnow',
         swimlaneID: 1
     },
     {
         id: 4,
-        guide: 0,
+        guideName: 'N/A',
         boatName: 'Flying Dutchman',
         swimlaneID: 3
     },
     {
         id: 5,
-        guide: 0,
+        guideName: 'Oliver Queen',
         boatName: 'Going Merry',
         swimlaneID: 2
     },
     {
         id: 6,
-        guide: 0,
+        guideName: 'Billy Batson',
         boatName: 'Black Pearl',
         swimlaneID: 1
     },
     {
         id: 7,
-        guide: 0,
+        guideName: 'Diana Prince',
         boatName: 'Nautilus',
         swimlaneID: 1
     },
