@@ -53,13 +53,36 @@ let boats = [
         
 ]
 
-router.get("/", function(req, res, next) {
+//Get All boats for main page
+router.get("/", (req, res, next) => {
     res.send(boats);
 });
 
-router.get("/:id", function(req, res, next) {
+//Get 1 boat
+router.get("/:id", (req, res, next) => {
     const boat = boats.filter(b => b.id === parseInt(req.params.id));
     res.send(boat);
+});
+
+//Create Boat
+router.post('/' , (req, res) => {
+    res.send("New Boat POST");
+
+});
+//Update Boat
+router.put('/:id', (req, res) =>{
+    //console.log(req.body)
+    let tempboat = [];
+    //boat.swimlaneID = req.body.swimlaneID;
+    boats.forEach(boat => {
+        if(boat.id === req.body.id){
+            boat.swimlaneID = req.body.swimlaneID;
+            tempboat = boat;
+        }
+    });
+
+
+    res.send(tempboat);
 })
 
 module.exports = router;
