@@ -14,24 +14,27 @@ The Github action Tests, packages, and deploys the application to an Azure Web A
 ## Routes
  Currently the data is presented as a hard coded list but if moved to a production it will be moved to a database for ease of use.
 
-** Guides ** A list of the 12 guides to be called by ID in other locations in the application.
+### Guides 
+A list of the 12 guides to be called by ID in other locations in the application.
 ID: Int
 guideName: String
 
-** Boats ** A list of the 8 boats.
+### Boats 
+A list of the 8 boats.
 ID: Int
 guideName: String
 boatName: String
 swimlaneID: Int
 
 ## Endpoints
-** boatsApi **
+### boatsApi 
 The boats hold the main endpoints for the application.
 GET: A generic get all of the boats for the main homepage to load.
 PUT: Update the swimlaneID for the boat.
 POST: Create a new boat to add and push it to the end of the boats array.
 DELETE: Delete a boat from the boats array.
 
-** guidesAPI **
+### guidesAPI
 The guides API would be expanded later on in development. Currently the only endpoint is GET all the guides for the new boat form in the frontend.
 There is no page to add or remove a guide from the application. If there would be one I would also want to develop a method to scrub the boat list of that particular guide that was removed.
+
