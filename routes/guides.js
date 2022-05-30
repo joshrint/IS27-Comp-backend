@@ -1,5 +1,7 @@
 var express = require("express");
 var router = express.Router();
+
+// Seeded guides list.
 let guidesList = [
     {
         id: 0,
@@ -7,7 +9,7 @@ let guidesList = [
     },
     {
         id: 1,
-        guideName: 'Bob Drake'
+        guideName: 'Bob (and Wilfred)'
     },
     {
         id: 2,
@@ -33,7 +35,6 @@ let guidesList = [
         id: 7,
         guideName: 'Billy Batson'
     },
-    ,
     {
         id: 8,
         guideName: 'Diana Prince'
@@ -55,8 +56,8 @@ let guidesList = [
         id: 12,
         guideName: 'Ben Grimm'
     }
-
 ];
+// GET endpoint for the guides
 router.get("/", function(req, res, next) {
     res.send(guidesList);
 });

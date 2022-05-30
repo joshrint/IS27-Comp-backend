@@ -8,7 +8,6 @@ var cors = require("cors");
 var indexRouter = require('./routes/index');
 var guideRouter = require('./routes/guides');
 var boatRouter = require('./routes/boats');
-var swimlanesRouter = require('./routes/swimlanes');
 
 var app = express();
 
@@ -27,7 +26,6 @@ app.use('/', indexRouter);
 app.use("/boatAPI", boatRouter);
 app.use("/boatAPI/:id", boatRouter);
 app.use('/guidesAPI', guideRouter);
-app.use('/swimlanesAPI', swimlanesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
